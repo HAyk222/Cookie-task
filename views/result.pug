@@ -1,0 +1,23 @@
+extends layout.pug
+
+block head
+    title Result
+
+block content
+    div.content
+        table
+            tbody
+                tr 
+                    th username
+                    th password
+                    th gender
+                    th agree width
+                each item in data
+                    tr
+                        td #{item.username}
+                        td #{item.password}
+                        td #{item.gender}
+                        td #{item.agree}
+        a(href="/form" class="back") Back
+
+        

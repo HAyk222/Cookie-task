@@ -1,0 +1,32 @@
+extends layout.pug
+
+block head
+    title Form
+
+block content
+    div.content
+        form(class="content__form" method="post" action="/form")
+            if error != ""
+                div.error #{error}
+            div.content__form__overlay
+                div.field
+                    input(type="text" class="inp" name="username" placeholder="Write Email")
+                div.field
+                    input(type="password" class="inp" name="password" placeholder="Write Password")
+                div Gender:
+                div.field
+                    span Male:
+                    input(type="radio" data-type="male" name="radio")
+                    label(for="male")
+                div.field
+                    span Female:
+                    input(type="radio" data-type="female" name="radio")
+                    label(for="female")
+                input(type="hidden" id="gender" name="gender")
+                div.field
+                    span Agree Width:
+                    input(type="checkbox" id="checkbox")
+                input(type="hidden" id="agree" name="agree")
+                div( class="field lgr")
+                    input(type="submit" value="submit")
+    script(src="js/script.js")

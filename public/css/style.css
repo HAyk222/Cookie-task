@@ -1,0 +1,44 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.content{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.content__form{
+	height: 400px;
+}
+
+.content__form .field{
+	margin: 10px 0;
+}
+
+tr th{
+	text-transform: uppercase;
+	padding: 10px 12px;
+	text-align: center;
+}
+
+tr td{
+	text-align: center;
+}
+
+
+.back{
+	position: fixed;
+	z-index: 2;
+	top: 5px;
+	right: 5px;
+	color: red;
+}
+
+.error {
+	color: red;
+}
